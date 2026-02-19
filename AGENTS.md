@@ -13,6 +13,7 @@
 ## Client-specific
 
 - **VS Code (extension or terminal):** When asked to open a file, open it in VS Code using `code <path>`.
+- **VS Code (extension or terminal):** After creating or updating a file, if there's no follow-up question or next step, offer to open it.
 
 ## Git
 
