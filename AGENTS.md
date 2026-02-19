@@ -6,6 +6,10 @@
 - **This file is public** — it is tracked in a public GitHub repo. Never add secrets, API keys, passwords, internal URLs, or other sensitive information to this file.
 - After making changes to this file, commit and push from `~/git/dotfiles`.
 
+## Self-improvement
+
+- When a CLI command, skill, or tool fails and we figure out the correct approach, suggest updating the relevant AGENTS.md (global or project-level) with the fix so future sessions handle it correctly. Keep suggestions small and practical (e.g., a flag to use, a command to run).
+
 ## Client-specific
 
 - **VS Code (extension or terminal):** When asked to open a file, open it in VS Code using `code <path>`.
