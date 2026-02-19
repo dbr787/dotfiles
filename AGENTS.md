@@ -6,6 +6,10 @@
 - **This file is public** — it is tracked in a public GitHub repo. Never add secrets, API keys, passwords, internal URLs, or other sensitive information to this file.
 - After making changes to this file, commit and push from `~/git/dotfiles`.
 
+## Client-specific
+
+- **VS Code (extension or terminal):** When asked to open a file, open it in VS Code using `code <path>`.
+
 ## Git
 
 - Combine `git add`, `git commit`, and `git push` in one command unless told otherwise.
