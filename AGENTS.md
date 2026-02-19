@@ -2,7 +2,9 @@
 
 ## About this file
 
-- `~/.config/amp/AGENTS.md` and `~/.claude/CLAUDE.md` are both symlinks to `~/.config/AGENTS.md` — they are all the same file. Do not attempt to update them separately.
+- `~/.config/amp/AGENTS.md`, `~/.claude/CLAUDE.md`, and `~/.config/AGENTS.md` are all symlinks to `~/git/dotfiles/AGENTS.md` — they are all the same file. Do not attempt to update them separately.
+- **This file is public** — it is tracked in a public GitHub repo. Never add secrets, API keys, passwords, internal URLs, or other sensitive information to this file.
+- After making changes to this file, commit and push from `~/git/dotfiles`.
 
 ## Git
 
