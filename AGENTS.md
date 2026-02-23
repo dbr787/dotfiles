@@ -31,6 +31,11 @@
 - If slack-cli auth fails, run `slack-cli auth login` to re-authenticate.
 - If the Slack app is not configured, the user will need to run `slack-cli auth config` first to enter app credentials.
 
+## Linear
+
+- When asked to search or manage Linear issues, use the `linear` skill with the `linear` CLI.
+- If auth fails, run `linear auth` to re-authenticate (requires an API key from linear.app/settings/account/security).
+
 ## Shell
 
 - Avoid piping to `head` or `tail` to limit output — it causes SIGPIPE (exit code 141). Instead, use the tool's native flags to limit results (e.g., `gh repo list --limit 80`, `grep -m 10`). If piping is unavoidable, exit code 141 is harmless.
