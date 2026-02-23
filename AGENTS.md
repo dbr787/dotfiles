@@ -34,7 +34,7 @@
 ## Linear
 
 - When asked to search or manage Linear issues, use the `linear` skill with the `linear` CLI.
-- If auth fails, run `linear auth` to re-authenticate (requires an API key from linear.app/settings/account/security).
+- If auth fails, run `linear auth login` to re-authenticate (requires an API key from linear.app/settings/account/security).
 
 ## Shell
 
