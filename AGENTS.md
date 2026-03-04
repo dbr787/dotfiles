@@ -8,7 +8,9 @@
 
 ## Self-improvement
 
-- When a CLI command, skill, or tool fails and we figure out the correct approach, suggest updating the relevant AGENTS.md (global or project-level) with the fix so future sessions handle it correctly. Keep suggestions small and practical (e.g., a flag to use, a command to run).
+- When a CLI command, skill, or tool fails and we figure out the correct approach, **immediately propose an edit** to the relevant AGENTS.md (global `~/git/dotfiles/AGENTS.md` or project-level) or skill file to record the fix. Don't just mention it — show the exact edit. The goal is to prevent the same mistake in future threads.
+- Record fixes in the most specific place: if it's about a particular CLI tool (e.g., `notion-cli`, `slack-cli`, `linear`), update that tool's section in this file or its skill. If it's project-specific, update the project's AGENTS.md.
+- Before running a CLI tool, check this file and the relevant skill for known flags and patterns. Don't guess at flags.
 
 ## Client-specific
 
