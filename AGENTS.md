@@ -45,7 +45,7 @@
 
 ## Buildkite
 
-- A Buildkite MCP server is available in projects that have it configured (`.vscode/mcp.json`). Use it instead of web scraping to query builds, logs, pipelines, and test results.
+- A Buildkite MCP server is available in projects that have it configured (`.mcp.json` or `.vscode/mcp.json`). Use it instead of web scraping to query builds, logs, pipelines, and test results.
 - When the user shares a Buildkite build URL, extract the org slug, pipeline slug, and build number from the URL to query via MCP tools.
 - For build failures, use `get_job_logs` then `search_logs` or `tail_logs` to find errors efficiently — never dump full logs into context.
 - If MCP auth has expired, the user will need to re-authenticate via the browser OAuth flow.
