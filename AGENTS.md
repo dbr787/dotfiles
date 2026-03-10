@@ -21,6 +21,7 @@
 
 - Combine `git add`, `git commit`, and `git push` in one command unless told otherwise.
 - If the user only says "commit" or "add and commit" (without mentioning push), omit the push.
+- `gh pr edit` may fail with a GitHub Projects Classic deprecation error (exit code 1) even when the edit partially succeeds. Use `gh api repos/{owner}/{repo}/pulls/{number} --method PATCH -f body="..."` instead.
 
 ## Notion
 
@@ -41,6 +42,13 @@
 ## Shell
 
 - Avoid piping to `head` or `tail` to limit output — it causes SIGPIPE (exit code 141). Instead, use the tool's native flags to limit results (e.g., `gh repo list --limit 80`, `grep -m 10`). If piping is unavoidable, exit code 141 is harmless.
+
+## Buildkite
+
+- A Buildkite MCP server is available in projects that have it configured (`.vscode/mcp.json`). Use it instead of web scraping to query builds, logs, pipelines, and test results.
+- When the user shares a Buildkite build URL, extract the org slug, pipeline slug, and build number from the URL to query via MCP tools.
+- For build failures, use `get_job_logs` then `search_logs` or `tail_logs` to find errors efficiently — never dump full logs into context.
+- If MCP auth has expired, the user will need to re-authenticate via the browser OAuth flow.
 
 ## AWS
 
