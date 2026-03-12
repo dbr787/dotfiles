@@ -33,6 +33,14 @@
 - When asked to search or read Slack, use the `slack` skill with `slack-cli`.
 - If slack-cli auth fails, run `slack-cli auth login` to re-authenticate.
 - If the Slack app is not configured, the user will need to run `slack-cli auth config` first to enter app credentials.
+- **Drafting Slack messages:** When creating messages intended to be copy/pasted into Slack, use Slack's mrkdwn format (not standard Markdown):
+  - Bold: `*bold*` (not `**bold**`)
+  - Italic: `_italic_` (not `*italic*`)
+  - Strikethrough: `~text~`
+  - Lists: use `•` for bullets (not `-`)
+  - Links: paste the raw URL (Slack auto-links it) or use `[text](url)` for named links. Do NOT use `<url|text>` — that's API-only and won't work in the compose box.
+  - Headings: not supported — use bold text instead.
+  - Save as `.txt` (not `.md`) so the user doesn't confuse it with standard Markdown.
 
 ## Linear
 
